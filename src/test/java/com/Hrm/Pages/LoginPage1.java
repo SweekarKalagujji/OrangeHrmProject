@@ -3,10 +3,10 @@ package com.Hrm.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage 
+public class LoginPage1 
 {
 	private WebDriver driver;
-	public LoginPage(WebDriver driver)
+	public LoginPage1(WebDriver driver)
 	{
 		this.driver=driver;
 	}

@@ -3,7 +3,7 @@ package com.Hrm.TestCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginPageTest extends BaseClass{
+public class LoginPageTest1 extends BaseClass1{
 	 
 		  @Test(priority=1)
 		  public void verifyUrl() 

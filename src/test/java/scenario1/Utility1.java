@@ -8,7 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
-public class Utility {
+public class Utility1 {
 
 	public static void getScreenshot(WebDriver driver)
 	{

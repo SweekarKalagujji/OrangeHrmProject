@@ -6,7 +6,7 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
-public class CustomData
+public class Custom
 {
 	@DataProvider(name="ExcelData")
 	public Object[][] fileData()

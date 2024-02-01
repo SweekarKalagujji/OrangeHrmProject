@@ -3,9 +3,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-public class AdminPage{
+public class AdminPage1{
  private WebDriver driver;
- public AdminPage(WebDriver driver){
+ public AdminPage1(WebDriver driver){
 	 this.driver=driver;}
  private By list=By.xpath("//ul[@class='oxd-main-menu']//li"); 
  private By usernameinputbox = By.xpath("(//div//input[@class='oxd-input oxd-input--active'])[2]");

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 
 
-public class AdminPageTest extends BaseClass {
+public class AdminPageTest1 extends BaseClass1 {
   @Test(priority=1)
   public void verifyDropDown() 
   {

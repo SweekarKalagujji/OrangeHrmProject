@@ -1,6 +1,7 @@
 package scenario1;
 import java.time.Duration;
 import org.openqa.selenium.By;
+import scenario1.Custom;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -8,7 +9,7 @@ import org.testng.annotations.Test;
 public class LoginPageTest 
 {
   public WebDriver driver;
-  @Test(priority=1,dataProvider="ExcelData",dataProviderClass=CustomData.class)
+  @Test(priority=1,dataProvider="ExcelData",dataProviderClass=Custom.class)
  
   public void loginTest(String un,String psw) throws InterruptedException 
   {
@@ -22,11 +23,11 @@ public class LoginPageTest
 	   //password
 	   driver.findElement(By.name("password")).sendKeys(psw);
 	   Thread.sleep(5000);
-	   Utility.getScreenshot(driver);
+	   Utility1.getScreenshot(driver);
 	    //button
 	   driver.findElement(By.className("orangehrm-login-button")).click();
 	   Thread.sleep(5000);
-	   Utility.getScreenshot(driver);
+	   Utility1.getScreenshot(driver);
 	   //validation
 	   Assert.assertTrue(un.contains("Admin"),"Username isn't valid");
 	   System.out.println("Username is valid");

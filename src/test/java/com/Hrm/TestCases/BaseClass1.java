@@ -8,21 +8,21 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
-import com.Hrm.Pages.AdminPage;
-import com.Hrm.Pages.LoginPage;
+import com.Hrm.Pages.AdminPage1;
+import com.Hrm.Pages.LoginPage1;
 
-public class BaseClass {
+public class BaseClass1 {
 	public WebDriver driver;
-	public LoginPage lp;
-	public AdminPage ap;
+	public LoginPage1 lp;
+	public AdminPage1 ap;
 	
 	@BeforeTest
 	public void setUpBrowser() {
 		driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		lp= new LoginPage(driver);
-		ap= new AdminPage(driver);
+		lp= new LoginPage1(driver);
+		ap= new AdminPage1(driver);
 		
 	}
 	@BeforeClass

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Hrm.TestCases.AdminPageTest">
+      <class name="com.Hrm.TestCases.AdminPageTest1">
         <methods>
-          <include name="pageSetUp"/>
-          <include name="setUpBrowser"/>
           <include name="verifysearchByUserRole"/>
+          <include name="setUpBrowser"/>
           <include name="verifysearchByUserStatus"/>
+          <include name="pageSetUp"/>
         </methods>
-      </class> <!-- com.Hrm.TestCases.AdminPageTest -->
+      </class> <!-- com.Hrm.TestCases.AdminPageTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
